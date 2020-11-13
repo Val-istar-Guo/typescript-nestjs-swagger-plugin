@@ -22,11 +22,13 @@ Add this plugin to `tsconfig.json`.
   "compilerOptions": {
     // ...other options
     "plugins": [
-      { "transform": "./build/typescript-nestjs-swagger.ts" },
+      { "transform": "./build/typescript-nestjs-swagger.ts", "introspectComments": true },
     ]
   },
 }
 ```
+
+For all options supported, please see: [@nestjs/swagger](https://docs.nestjs.com/openapi/cli-plugin#using-the-cli-plugin)
 <!-- usage -->
 
 <!-- addition --><!-- addition -->
