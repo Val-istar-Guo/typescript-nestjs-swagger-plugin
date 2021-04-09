@@ -69,5 +69,19 @@
   "peerDependencies": {
     "typescript": "*",
     "@nestjs/swagger": "*"
-  }
+  },
+  "description": "@nestjs/swagger ttypescript plugin reduce the amount of boilerplate code required.",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Val-istar-Guo/typescript-nestjs-swagger-plugin.git"
+  },
+  "author": "val.istar.guo <val.istar.guo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Val-istar-Guo/typescript-nestjs-swagger-plugin/issues"
+  },
+  "homepage": "https://github.com/Val-istar-Guo/typescript-nestjs-swagger-plugin#readme"
 }
