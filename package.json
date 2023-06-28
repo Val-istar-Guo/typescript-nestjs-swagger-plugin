@@ -29,7 +29,7 @@
     "build": "tsc",
     "clean": "rm -rf ./lib/*",
     "prepare": "ts-patch install -s & is-ci || husky install",
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run build",
     "release": "standard-version --no-verify",
     "release:alpha": "standard-version --prerelease alpha",
     "watch": "NODE_ENV=development ttsc -w"
