@@ -3,26 +3,14 @@
     "outDir": "./lib",
     "moduleResolution": "node",
     "module": "commonjs",
-    "target": "ESNext",
+    "target": "es6",
     "strict": true,
     "noImplicitAny": false,
-    "declaration": true,
     "resolveJsonModule": true,
     "baseUrl": "./",
     "noEmitOnError": true,
-    "paths": {
-      "@/*": ["src/*"],
-      "@root/*": ["./*"]
-    },
-    "plugins": [
-      { "transform": "typescript-transform-paths" },
-      { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ]
+    "plugins": [{ "transform": "typescript-transform-paths" }]
   },
-  "exclude": ["node_modules"],
-  "files": ["index.ts"],
-  "include": ["src/**/*.ts"],
-  "ts-node": {
-    "compiler": "ttypescript"
-  }
+  "exclude": ["node_modules", "lib"],
+  "include": ["**/*.ts", "*.cjs"]
 }
